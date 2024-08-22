@@ -1,7 +1,7 @@
 <!--
     Author(a): Juan Jose Cardona
     Date of the creation: 15/08/2024
-    Last Modification: 15/08/2024 | 10:00am
+    Last Modification: 22/08/2024 | 11:39am
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -11,17 +11,30 @@
     <title>My First HTML</title>
     <!-- Fav Icon -->
     <link type="image/png" sizes="32x32" rel="icon" href="./src/img/icons8-estrella-32.png">
-    <link rel="stylesheet" href="./src/css/main.css">   
+    <link rel="stylesheet" href="./src/css/main.css"> 
+      <!-- crear un boton que diga la fecha  -->
     <script>
-        alert("Hello World");
+        function showDate(){
+            document.getElementById('demo').innerHTML = Date();
+        }
+
+        showDate();
     </script>     
 </head>
-<body>
+
+<!-- propiedad onload <- cuando cargue -->
+<body onLoad="showDate()">
     <h1>Hello World!</h1>
     <h2>Hello World!</h2>
     <h3>Hello World!</h3>
     <h4>Hello World!</h4>
     <h5>Hello World!</h5>
+
+<!-- crea un parrafo de texto que responde al llamado de un id -->
+    <p id="demo"> Fecha</p>
+    <br><br>
+    <!-- en este botonse usa JavaScript como por ejemplo getter, con la propiedad on click -->
+    <button type="button" onclick="showDate()">¿Que Fecha Es Hoy?</button>
     <p class="myText"> Hola </p>
     <p class="myText">Maecenas dui massa, gravida vitae ipsum id, fringilla accumsan nibh. Suspendisse vel arcu id metus maximus vulputate in id ligula. Nulla quis finibus nisi, in maximus mauris. In et ex ligula. Duis blandit posuere justo sed rutrum. Curabitur facilisis mollis cursus. Vivamus maximus eget mi eget facilisis. Proin rhoncus dignissim risus vel sodales. In hac habitasse platea dictumst. Cras lobortis, turpis in semper ullamcorper, nulla quam suscipit urna, quis dignissim velit ante faucibus ex. Sed rutrum cursus tincidunt. Sed pulvinar, enim id eleifend vestibulum, risus arcu varius augue, et vulputate lacus ligula ut urna. Praesent venenatis tempor neque.</p>
     <p>Kelly <strong>Daniella </strong><em>Marin</em></p>
