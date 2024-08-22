@@ -1,17 +1,17 @@
 
-        /* Palabra reservada: body, p , h1*/
-        body{
-            background-color: rgb(123, 231, 252);
-            font-family: verdana;
-            font-size: 30px;
-        }
+/* Palabra reservada: body, p , h1*/
+body{
+    background-color: rgb(123, 231, 252);
+    font-family: verdana;
+    font-size: 30px;
+}
 
-        /* Class */
-        .myText{ 
-            background-color: red;
-        }
+/* Class */
+.myText{ 
+    background-color: red;
+}
 
-        /* id */
-        #myImageSVG{
-            background-color: aqua;
-        }
+/* id */
+#myImageSVG{
+    background-color: aqua;
+}
