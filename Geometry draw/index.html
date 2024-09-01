@@ -139,7 +139,7 @@
                             
                             <form action="">
             
-                                <!--Vector V forum-->
+                                <!--Vector U forum-->
                                 <label for="">Vector U: </label>
                                 <span>(</span>
                                 <input style="width: 20%;" type="number" name="VectorUX" id="VectorUX" placeholder="UX">
@@ -150,7 +150,7 @@
                                 <span>)</span>
                                 <br><br>
             
-                                <!--Punto B forum-->
+                                <!--Vectro V forum-->
                                 <label for="">Vector V: </label>
                                 <span>(</span>
                                 <input style="width: 20%;" type="number" name="VectorVX" id="VectorVX" placeholder="VX">
@@ -172,6 +172,46 @@
 
                             <span id="resultadoSuma">
                                 Addition Result Here
+                            </span>
+            
+                        </div>
+                    </div>
+
+                    <br><br><br>
+
+                    <!--magnitud de un vector-->
+
+                    <div class="card" style="background-color: rgba(252, 250, 250, 0.972);">
+                        <div class="card-header" style="background-color: black; color: white; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 150%;">
+                            Magnitude of a Vector |W|
+                        </div>
+                        <div class="card-body">
+                            
+                            <form action="">
+            
+                                
+                                <!--vector W forum-->
+                                <label for="">Vector W: </label>
+                                <span>(</span>
+                                <input style="width: 20%;" type="number" name="VectorWX" id="VectorWX" placeholder="WX">
+                                <span>,</span>
+                                <input style="width: 20%;" type="number" name="VectorWY" id="VectorWY" placeholder="WY">
+                                <span>,</span>
+                                <input style="width: 20%;" type="number" name="VectorWZ" id="VectorWZ" placeholder="WZ">
+                                <span>)</span>
+                                <br><br>
+            
+                            </form>
+                            <br><br>
+                            
+                            <div class="d-grid gap-2">
+                                <button onclick="magnitud()" class="btn bg-warning" type="button">Find Magnitude of |W|</button>
+                            </div>
+
+                            <br>
+
+                            <span id="resultadoMagnitud">
+                                Magnitude Result Here
                             </span>
             
                         </div>

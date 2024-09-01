@@ -32,34 +32,49 @@ function vector(){
 }
 
 function sumar(){
-    //alert("calculate")
-    //obtener valores inputs
 
-    //var es para variable global
-    //let es para que exista solo en la funcion
-    //const es para variable constante
+    let ax = document.getElementById("VectorUX").value;
+    let ay = document.getElementById("VectorUY").value;
+    let az = document.getElementById("VectorUZ").value;
 
-    let ux = document.getElementById("VectorUX").value;
-    let uy = document.getElementById("VectorUX").value;
-    let uz = document.getElementById("VectorUX").value;
+    let bx = document.getElementById("VectorVX").value;
+    let by = document.getElementById("VectorVY").value;
+    let bz = document.getElementById("VectorVZ").value;
 
-    let vx = document.getElementById("VectorVX").value;
-    let vy = document.getElementById("VectorVX").value;
-    let vz = document.getElementById("VectorVX").value;
+    
+    let vx = parseInt(bx) + parseInt(ax),
+        vy = parseInt(by) + parseInt(ay),
+        vz = parseInt(bz) + parseInt(az);
 
-    //alert("("+ax+","+ay+","+az+")");
-    //alert("("+bx+","+by+","+bz+")");
+    
+    let vectorFinal = `(${vx},${vy},${vz})`;
 
-    let uvx = ux+vx,
-        uvy = uy+vy,
-        uvz = uz+vz;
+    document.getElementById("resultadoSuma").innerHTML = vectorFinal;
 
-    //alert("( "+ vx + ", " + vy + ", " + vz +" )");
-
-    let vectorSumaFinal = `(${uvx},${uvy},${uvz})`;
-
-    document.getElementById("resultadoSuma").innerHTML = vectorSumaFinal;
-
-    //alert(vectorFinal);
     
 }
+
+function magnitud(){
+
+    
+    let x = document.getElementById("VectorWX").value;
+    let y = document.getElementById("VectorWY").value;
+    let z = document.getElementById("VectorWZ").value;
+
+    let wx = parseInt(x) + 0,
+        wy = parseInt(y) + 0,
+        wz = parseInt(z) + 0;
+
+        alert("( "+ wx + ", " + wy + ", " + wz +" )");
+    
+    let w = Math.sqrt(wx*wx + wy*wy + wz*wz);
+
+    alert("( "+ w + " )");
+    
+    let magnitudVector = "|W| = " + w;
+
+    document.getElementById("resultadoMagnitud").innerHTML = magnitudVector;
+
+    
+}
+
