@@ -54,6 +54,34 @@ function sumar(){
     
 }
 
+function producto(){
+
+    let ax = document.getElementById("PVectorUX").value;
+    let ay = document.getElementById("PVectorUY").value;
+    let az = document.getElementById("PVectorUZ").value;
+
+    let bx = document.getElementById("PVectorVX").value;
+    let by = document.getElementById("PVectorVY").value;
+    let bz = document.getElementById("PVectorVZ").value;
+
+    
+    let vx = parseInt(bx) * parseInt(ax),
+        vy = parseInt(by) * parseInt(ay),
+        vz = parseInt(bz) * parseInt(az);
+
+        //alert("( "+ vx + ", " + vy + ", " + vz +" )");
+    
+    let vectorFinal = vx + vy + vz;
+
+    //alert(vectorFinal);
+
+    
+
+    document.getElementById("resultadoProducto").innerHTML = vectorFinal;
+
+    
+}
+
 function magnitud(){
 
     
@@ -65,11 +93,11 @@ function magnitud(){
         wy = parseInt(y) + 0,
         wz = parseInt(z) + 0;
 
-        alert("( "+ wx + ", " + wy + ", " + wz +" )");
+        
     
     let w = Math.sqrt(wx*wx + wy*wy + wz*wz);
 
-    alert("( "+ w + " )");
+    
     
     let magnitudVector = "|W| = " + w;
 
