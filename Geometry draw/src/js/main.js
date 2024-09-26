@@ -82,7 +82,9 @@ function startScene() {
     const plane = new THREE.Mesh( geometry, material );
     scene.add( plane );
 
-    plane.position.z = 5;
+    //plane.position.z = 5;
+
+    
 
     animate();
 
@@ -249,7 +251,7 @@ function drawObjects(geometry) {
   } );
 
 
-  var objectToAdd = new THREE.Mesh(geometry, materialStandard);
+  var objectToAdd = new THREE.Mesh(geometry, materialStandart);
   objectToAdd.name = "figura"+count;
   objectToAdd.id = "figura"+count;
 
